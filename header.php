@@ -17,7 +17,7 @@ $loginn = $_SESSION['login'] ?? 'Guest';
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-
+   
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     
@@ -73,7 +73,7 @@ background-color:rgba(0,0,0,0.6);
                 <i class="fa fa-user-circle"></i> <?php echo $loginn ;?></a>
                 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a href="cart.php" class="dropdown-item"><i class="fa fa-cart-plus"></i> cart</a>
+              <a href="cart.php" class="dropdown-item"><i class="fa fa-shopping-basket "></i> cart</a>
               <a href="edit_profil.php" class="dropdown-item"><i class="fa fa-pencil"></i> edit Profil</a>
               <a href="logout.php" class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
             </div>
@@ -87,7 +87,7 @@ background-color:rgba(0,0,0,0.6);
                 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a href="list_user.php" class="dropdown-item"><i class="fa fa-users"></i> list of users</a>
-              <a href="add.php" class="dropdown-item"><i class="fa fa-plus-circle"></i> add</a>
+              <a href="list_pizza.php" class="dropdown-item"><i class="fa fa-file-text"></i> list of pizza</a>
               <a href="edit_profil.php" class="dropdown-item"><i class="fa fa-pencil"></i> edit Profil</a>
               <a href="logout.php" class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
             </div>
@@ -104,4 +104,5 @@ background-color:rgba(0,0,0,0.6);
 	      </div>
 		  </div>
 	  </nav>
+    
     <!-- END nav -->

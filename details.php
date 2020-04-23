@@ -1,5 +1,5 @@
 <?php
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
 if(isset($_POST['delete'])){
 
   $id_to_delete = $_POST['id_to_delete'];
@@ -36,7 +36,7 @@ else
     <h2 class="mb-3 text-center"><?php echo $row['title'];?></h2>
         <p class="text-center"><?php echo $row['ingredients'];?></p>
             <p class="text-center">
-              <img src="images/<?php echo $row['image'];?>.jpg" alt="" class="img-fluid">
+              <img src="images/<?php echo $row['image'];?>.jpg" alt="Responsive image" class="img-thumbnail">
             </p>
    
 </div>

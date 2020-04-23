@@ -1,6 +1,6 @@
 <?php
 include('header.php');
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
 
 if(isset($_POST['submit'])){
     
@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
     
       if(empty($login) && empty($password)){
         //echo 'errors in form';
+        
       } else {
         $requete="select user_id,login,admin from users where login='$login' and password='$password'";
         $result=$con->query($requete);
@@ -38,8 +39,9 @@ if(isset($_POST['submit'])){
          $_SESSION['login']=$log;
          $_SESSION['id']=$id;
          $_SESSION['admin']=$admin;
-         }
          header('location: index.php');
+         }
+         
         }
       }  
       
@@ -65,6 +67,7 @@ if(isset($_POST['submit'])){
               </div>
               <a href="register.php">Create Account</a>
             </form>
+            
     </div>
 
 

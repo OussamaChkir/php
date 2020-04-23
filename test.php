@@ -1,5 +1,5 @@
 <?php  
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
 include('header.php');
 $requete="SELECT * FROM users  where user_id=6";
 $result=$con->query($requete);

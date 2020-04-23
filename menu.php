@@ -1,6 +1,6 @@
 <?php
 
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
 $requete="SELECT * FROM pizzas";
 $result=$con->query($requete);
 if(!$result)

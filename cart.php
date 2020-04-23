@@ -1,6 +1,6 @@
 <?php
 include('header.php');
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
  //var_dump($_SESSION['cart']); 
  $whereid= implode(',',$_SESSION['cart']);
  $requete="SELECT * FROM pizzas WHERE pizza_id IN ($whereid)";

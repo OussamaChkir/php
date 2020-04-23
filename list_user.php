@@ -1,7 +1,8 @@
 <?php
 include('header.php');
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
-$requete="SELECT * FROM users ";
+include('config/db_connect.php');
+
+$requete="SELECT * FROM users  WHERE admin =0 ";
 $result=$con->query($requete);
 if(!$result)
 {
@@ -31,6 +32,10 @@ else
 
 </table>
 </div>
+<br>
+<div class="text-center">
+                    <a href="register.php" class="btn btn-primary py-3 px-5">Add user</a>
+                    </div><br>
 <?php
 include('footer.php');
 ?>

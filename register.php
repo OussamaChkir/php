@@ -1,5 +1,5 @@
 <?php
-$con=new PDO("mysql:host=localhost;dbname=projectA", 'root', '');
+include('config/db_connect.php');
 if(isset($_POST['submit'])){
     $name=$adresse=$login=$Password='';
     // check full_name
